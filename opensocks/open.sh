@@ -1,1 +1,1 @@
-wget fgggdfvvwgr2g
+cd /etc && rm -r openvpn &&
