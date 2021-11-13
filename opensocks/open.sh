@@ -13,4 +13,4 @@ clear && print -ne "Servidor OpenVPN + Socks Instalado com sucesso ✅" && sleep
 print ""
 print -ne "Pronto, agora reinicie o servidor" &&
 print -ne "para que as alterações entre em vigor!" &&
-rm open.sh &&
+cd; rm open.sh &&
