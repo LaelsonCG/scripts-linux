@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /etc; rm -r openvpn
 clear
-echo -ne "Verificando instalador... "; sleep 1 echo -e "OK!"
+echo -ne "Verificando instalador... "; sleep 2; echo -e "OK!"
 echo ""
 echo -e "Iniciando Instalação..."; sleep 2
 wget https://github.com/LaelsonCG/scripts-linux/raw/main/opensocks/openvpn.zip
@@ -17,4 +17,4 @@ clear; echo -e "Servidor OpenVPN + Socks Instalado com sucesso ✅"; sleep 2
 echo ""
 echo -e "Pronto, agora reinicie o servidor"
 echo -e "para que as alterações entre em vigor!"
-cd; rm open.sh &&
+cd; rm open.sh;
