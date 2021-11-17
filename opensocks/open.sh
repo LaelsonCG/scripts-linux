@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /etc; rm -r openvpn
 clear
-echo -ne "Verificando instalador... "; sleep 2; echo -e "OK!"
+echo -ne "Verificando instalador... "; sleep 2; echo -e "OK!"; sleep 1
 echo ""
 echo -e "Iniciando Instalação..."; sleep 2
 wget https://github.com/LaelsonCG/scripts-linux/raw/main/opensocks/openvpn.zip
