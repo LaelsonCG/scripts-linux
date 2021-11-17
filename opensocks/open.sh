@@ -6,12 +6,12 @@ echo ""
 echo -e "Iniciando Instalação..."; sleep 2
 wget https://github.com/LaelsonCG/scripts-linux/raw/main/opensocks/openvpn.zip
 unzip openvpn.zip
-rm openvpn.zip
+sleep 1; rm openvpn.zip
 cd /etc/SSHPlus/
-rm open.py
+rm open.py; sleep 1
 wget https://raw.githubusercontent.com/LaelsonCG/scripts-linux/main/opensocks/open.py
 chmod 777 open.py
-cd /root; rm SSHPLUS.ovpn
+cd /root; rm SSHPLUS.ovpn; sleep 1
 wget https://raw.githubusercontent.com/LaelsonCG/scripts-linux/main/opensocks/SSHPLUS.ovpn
 clear; echo -e "Servidor OpenVPN + Socks Instalado com sucesso ✅"; sleep 2
 echo ""
