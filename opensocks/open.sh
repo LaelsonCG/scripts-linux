@@ -17,4 +17,4 @@ clear; echo -e "Servidor OpenVPN + Socks Instalado com sucesso ✅"; sleep 2
 echo ""
 echo -e "Pronto, agora reinicie o servidor"
 echo -e "para que as alterações entre em vigor!"
-cd; rm open.sh;
+cd; rm open.sh
