@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Função para exibir mensagens informativas
+informar() {
+    echo -e "\e[32m$1\e[0m"
+}
+
+# Verificar se o diretório "/opt/speednet/" existe, se não existir, criar.
+if [ ! -d "/opt/speednet/" ]; then
+    informar "Criando o diretório /opt/speednet/..."
+    mkdir -p /opt/speednet/
+else
+    informar "Diretório /opt/speednet/ já existe."
+fi
+
+# Baixar o script do GitHub
+informar "Baixando o script del_expirados.exp do GitHub..."
+wget -q -O /opt/speednet/del_expirados.exp https://raw.githubusercontent.com/LaelsonCG/scripts-linux/main/addons-sshpluspro/del_expirados.exp
+
+# Dar permissão de execução
+informar "Dando permissão de execução ao script..."
+chmod +x /opt/speednet/del_expirados.exp 
+
+# Instalar o expect
+informar "Instalando o expect..."
+apt-get install -y expect > /dev/null 2>&1
+
+# Adicionar cron diariamente para executar o script, verificando se já existe
+informar "Adicionando tarefa no cron para execução diária do script..."
+if ! crontab -l 2>/dev/null | grep -q "del_expirados.exp"; then
+    (crontab -l 2>/dev/null; echo "@daily /opt/speednet/del_expirados.exp") | crontab -
+    informar "Tarefa adicionada ao cron com sucesso."
+else
+    informar "Tarefa já existe no cron."
+fi
+
+informar "Instalação concluída."
+imformar "Solução criada por @Laael"
