@@ -2,6 +2,10 @@
 
 ## Aqui estão alguns add-ons que fiz para uso em conjunto com o script SSHPLUS PRO em sua VPS
 
+#### Lista de ADD-ONS disponíveis:
+* Deletar usuarios expirados automaticamente 1x ao dia
+* Futuramente posso add outros...
+
 ### Comando para instalar
 
 ```shell
