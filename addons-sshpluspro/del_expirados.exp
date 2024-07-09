@@ -1,0 +1,24 @@
+#!/usr/bin/expect
+
+# Desativa o eco das interações no terminal para evitar caracteres indesejados
+log_user 0
+
+# Inicia a ferramenta "menu"
+spawn menu
+
+# Habilita o eco de interações após o início da ferramenta
+log_user 1
+
+# Espera pela entrada do usuário e envia "9" seguido de Enter
+expect ">"
+send "9\r"
+
+# Espera pela conclusão da operação da opção 9, que pode variar
+# Ajuste a condição do expect conforme a saída específica após a execução da opção 9
+expect ">"
+
+# Envia "0" para sair da ferramenta seguido de Enter
+send "0\r"
+
+# Espera que o programa finalize
+expect eof
