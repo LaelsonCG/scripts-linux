@@ -48,4 +48,5 @@ O script solicitará que você informe o tamanho da swap (em GB) e ajustará aut
 **Script feito para ser simples, seguro e funcional, mas usuários leigos podem precisar de ajuda para interpretar mensagens ou reiniciar o servidor.**
 
 **Autor:** LaelsonCG
+
 **Telegram:** https://t.me/LaelsonC
