@@ -35,7 +35,7 @@ Este script automatiza a configuração de otimização de memória em sistemas 
 
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/LaelsonCG/scripts-linux/refs/heads/main/otimizar/config.sh)
-
+```
 O script solicitará que você informe o tamanho da swap (em GB) e ajustará automaticamente as configurações do sistema.
 
 ---
